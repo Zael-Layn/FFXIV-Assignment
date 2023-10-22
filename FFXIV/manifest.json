@@ -1,7 +1,7 @@
 {
-    "name": "Task Manager",
-    "short_name": "TM",
-    "description": "Manage your daily tasks",
+    "name": "FFXIV",
+    "short_name": "FFXIV",
+    "description": "Manage your daily crafting and gathering tasks",
     "start_url": "/index.html",
     "scope": ".",
     "display": "standalone",
