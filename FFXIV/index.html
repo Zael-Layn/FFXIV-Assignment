@@ -17,7 +17,7 @@
 <body class="grey lighten-4">
     <nav class="z-depth-0">
         <div class="nav-wrapper container">
-            <a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/index.html">Welcome<span> to Eorzea</span></a>
+            <a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/index.html"><span>Welcome to Eorzea</span></a>
             <a href="#" class="sidenav-trigger" data-target="side-menu"><i class="material-icons">menu</i></a>
         </div>
     </nav>
@@ -31,16 +31,6 @@
         <li><a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages/contact.html" class="waves-effect"><i class="material-icons">mail_outline</i>Contact</a></li>
     </ul>
 
-    <h1>Task Scheduler</h1>
-
-    <div id="task-form">
-      <input type="text" id="task-input" placeholder="Enter task">
-      <button id="add-task-btn">Add Task</button>
-    </div>
-  
-    <ul id="task-list"></ul>
-  
-    <script src="script.js"></script>
 </body>
 
 
@@ -49,24 +39,13 @@
         <div class="card-panel task white row">
             
             <div class="task-detail">
-                <div class="task-title">Crafting Schedule</div>
-                <div class="task-description">Crafting times are as follows: 3:00ET, 9:00ET, 15:00ET, 21:00ET</div>
-            </div>
-            <div class="task-delete">
-                <i class="material-icons">delete_outline</i>
+                <div class="task-title">Gathering Time Scheduler</div>
+                <div class="task-description">List your item and gathering times below.</div>
             </div>
         </div>
-        <div class="card-panel task white row">
-            <div class="task-detail">
-                <div class="task-title">Gathering Schedules</div>
-                <div class="task-description">Gathering times are as follows: 0:00ET, 6:00ET, 12:00ET, 18:00ET</div>
-            </div>
-            <div class="task-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
+        
     </div>
-
+    <script src="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/script.js"></script>
     <div class="center">
         <a class="btn-floating btn-large add-btn sidenav-trigger" data-target="side-form">
             <i class="material-icons">add</i>
@@ -78,12 +57,12 @@
             <h3>Create a New Task</h3>
             <div class="divider"></div>
             <div class="input-field">
-                <input placeholder="Enter Task" id="title" class="validate" type="text">
-                <label for="title">Task Title</label>
+                <input placeholder="Enter Item" id="title" class="validate" type="text">
+                <label for="title">Enter Item</label>
             </div>
             <div class="input-field">
-                <input placeholder="Enter Description" id="description" class="validate" type="text">
-                <label for="description">Task Description</label>
+                <input placeholder="Enter Time" id="description" class="validate" type="text">
+                <label for="description">Enter Time</label>
             </div>
     
             <div class="input-field center">
@@ -91,6 +70,11 @@
             </div>
         </form>
     </div>
+
+    <div class="container">
+        <div class="task-container">
+        </div>
+    </div>   
 
     <script src="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/ui.js"></script>
     <script src="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/app.js"></script>

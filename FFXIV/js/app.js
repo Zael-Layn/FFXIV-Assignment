@@ -19,3 +19,4 @@ if ("serviceWorker" in navigator) {
   // Happens when the app isn't served over a TLS connection (HTTPS) or if the browser doesn't support the service worker
   console.log("Service Worker not available");
 }
+
