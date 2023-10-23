@@ -3,14 +3,13 @@ const dynamicCache = "Dynamic-cache-v1";
 
 const assets = [
   "/",
-  "/index.html",
-  "/pages/fallback.html",
-  "/js/app.js",
-  "/js/ui.js",
-  "/js/materialize.min.js",
-  "/css/materialize.min.css",
-  "/css/app.css",
-  "/img/task.png",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/index.html",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages/fallback.html",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/app.js",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/ui.js",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/materialize.min.js",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/css/materialize.min.css",
+  "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/css/app.css",
   "https://fonts.googleapis.com/icon?family=Material+Icons",
 ];
 
@@ -62,6 +61,6 @@ self.addEventListener("fetch", function (event) {
           })
         );
       })
-      .catch(() => caches.match("/pages/fallback.html"))
+      .catch(() => caches.match("file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages.fallback.html"))
   );
 });

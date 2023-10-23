@@ -2,7 +2,7 @@
     "name": "FFXIV",
     "short_name": "FFXIV",
     "description": "Manage your daily crafting and gathering tasks",
-    "start_url": "https://github.com/Zael-Layn/FFXIV-Assignment/blob/main/FFXIV/index.html",
+    "start_url": "file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/index.html",
     "scope": ".",
     "display": "standalone",
     "orientation": "portrait-primary",
