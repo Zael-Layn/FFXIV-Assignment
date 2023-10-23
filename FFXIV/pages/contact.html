@@ -11,6 +11,38 @@
     <link rel="stylesheet" href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/css/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="manifest" href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/manifest.json">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 7px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="grey lighten-4">
@@ -28,11 +60,11 @@
         <li><a class="subheader">FFXIV</a></li>
         <li><a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/index.html" class="waves-effect">Home</a></li>
         <li><a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages/about.html" class="waves-effect">About</a></li>
+        <li><a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages/timers.html" class="waves-effect">Timers</a></li>
         <li><div class="divider"></div></li>
         <li><a href="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/pages/contact.html" class="waves-effect"><i class="material-icons">mail_outline</i>Contact</a></li>
     </ul>>
 
-    <!-- Content -->
     <div class="container grey-text">
         <h5 class="center">Contact</h5>
         <p>
@@ -42,6 +74,33 @@
           We are always looking for ways to improve our site.
         </p>
     </div>
+
+    <form action="#" method="POST" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+            alert("Form Submitted");
+        });
+    </script>
+    </form>
 
     <script src="file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/js/ui.js"></script>
 
