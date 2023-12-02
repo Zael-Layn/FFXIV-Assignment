@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Create the delete button
       var deleteButton = document.createElement('button');
       deleteButton.classList.add('delete-button');
-      deleteButton.textContent = 'Delete';
+      deleteButton.textContent = '';
 
       // Add a click event listener to the delete button
       deleteButton.addEventListener('click', function() { 
@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
       taskCard.appendChild(taskTitle);
       taskCard.appendChild(taskDescription);
       taskCard.appendChild(deleteButton);
+
+      var deleteIcon = document.createElement('i');
+      deleteIcon.classList.add('fas', 'fa-trash-alt');
+      deleteButton.appendChild(deleteIcon);
 
       // Append the task card to the task container
       taskContainer.appendChild(taskCard);

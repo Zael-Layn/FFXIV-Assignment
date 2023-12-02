@@ -7,3 +7,23 @@ document.addEventListener("DOMContentLoaded", function () {
   M.Sidenav.init(forms, { edge: "left" });
 });
 
+const renderTask = (data, id) => {
+  const html = `
+  <div class="card-panel task white row" data-id ="${id}">
+    <img src="/img/task.png" class="responsive-img materialboxed" alt="">
+    <div class="task-detail">
+      <div-class="task-title">${data.title}</div>
+      <div class="task-description">${data.description}</div>
+  </div>
+  <div class="task-delete">
+    <i class="material-icons" data-id="${id}">delete_outline</i>
+  </div>
+`;
+
+tasks.innerHTML += html;
+};
+
+const removeTask = (id) => {
+  const task = document.querySelector(`.task[data-id = '${id}']`);
+  task.remove();
+};
