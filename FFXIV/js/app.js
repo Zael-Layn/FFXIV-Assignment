@@ -5,7 +5,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     // Then register our service worker
     navigator.serviceWorker
-      .register("file:///C:/Users/Natsu/Desktop/School/Mobile%20Web%20Development/FFXIV/FFXIV/sw.js")
+      .register("/sw.js")
       .then((reg) => {
         // Display a success message
         console.log(`Service Worker Registration (Scope: ${reg.scope})`);

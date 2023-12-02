@@ -19,6 +19,7 @@ const renderTask = (data, id) => {
     <i class="material-icons" data-id="${id}">delete_outline</i>
   </div>
 `;
+let tasks = [];
 
 tasks.innerHTML += html;
 };

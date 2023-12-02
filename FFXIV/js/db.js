@@ -8,7 +8,7 @@ import {
   addDoc,
   deleteDoc,
   doc,
-} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -25,7 +25,7 @@ import {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(app);
+
 
 async function getTasks(db) {
   const tasksCol = collection(db, "tasks");
